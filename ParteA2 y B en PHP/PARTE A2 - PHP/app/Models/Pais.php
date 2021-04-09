@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Pais extends Model
+{
+    use HasFactory;
+    public $timestamps = false;
+    protected $primaryKey = 'codigoPais';
+    public $incrementing = false;
+    protected $fillable = [
+        'codigoPais',
+        'nombrePais',
+        'capitalPais',
+        'region',
+        'poblacion',
+        'latitud',
+        'longitud',
+    ];
+
+}
